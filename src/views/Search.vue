@@ -1,13 +1,18 @@
 <template>
   <div class="search">
-    <h1>Search launches</h1>
+    <h1>Xspace</h1>
+    <h2>Search launches</h2>
+    <p>
+      SpaceX has contracted more than 100 launches since 2012, take a closer
+      look and explore them here.
+    </p>
     <div class="preset-container">
       <b-button
         @click="search(preset)"
         v-for="preset in searchPresets"
         :key="preset"
         pill
-        variant="outline-secondary"
+        variant="outline-light"
       >
         {{ preset }}
       </b-button>
@@ -53,6 +58,7 @@ export default {
         "https://api.spacexdata.com/v3/launches"
       );
       this.launches = data;
+      //console.log(data);
     },
     search(value) {
       this.searchInput = value;
@@ -64,9 +70,33 @@ export default {
 <style lang="scss" scoped>
 .preset-container {
   margin: 20px;
+  padding: 20px;
 
   .btn {
-    margin: 0 2em;
+    margin: 0 1em;
+    padding: 20px;
+    border-style: solid;
   }
+}
+
+input {
+  width: 40%;
+  padding: 15px;
+  color: black;
+  font-size: 20px;
+
+  appearance: none;
+  border-style: solid;
+  outline: none;
+  background: white;
+
+  background-color: rgba(255, 255, 255, 0.214);
+  border-radius: 0px 16px 0px 16px;
+}
+
+h1 {
+  font-family: "Monoton", cursive;
+  font-size: 100px;
+  padding: 20px;
 }
 </style>

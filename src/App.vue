@@ -16,18 +16,33 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: floralwhite;
+  background-image: url("./assets/moon.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s;
+}
+
+main {
+  min-height: 100vh;
+  padding: 25px;
 }
 
 #nav {
   padding: 30px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
 
   a {
     font-weight: bold;
     color: #2c3e50;
+    padding: 10px;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #f2f2f2;
+      padding: 10px;
     }
   }
 }

@@ -23,7 +23,17 @@ export default {
 .launch-list-item {
   margin: 2em 2em;
   padding: 1em;
-  background-color: white;
+  background-color: #f2f2f2;
   border-radius: 12px;
+  width: 50%;
+  justify-content: center;
+
+  h3 {
+    color: #363636;
+  }
+
+  p {
+    color: #363636;
+  }
 }
 </style>
