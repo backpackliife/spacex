@@ -82,7 +82,7 @@ export default {
 input {
   width: 40%;
   padding: 15px;
-  color: black;
+  color: white;
   font-size: 20px;
 
   appearance: none;

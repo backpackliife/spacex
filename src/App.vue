@@ -7,6 +7,7 @@
     <main>
       <router-view />
     </main>
+    <footer>© Xspace 2021</footer>
   </div>
 </template>
 
@@ -26,6 +27,10 @@
 main {
   min-height: 100vh;
   padding: 25px;
+}
+
+footer {
+  padding: 20px;
 }
 
 #nav {
