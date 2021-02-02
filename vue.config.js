@@ -1,5 +1,10 @@
 module.exports = {
   pwa: {
+    workboxPluginMode: "InjectManifest",
+    workboxOptions: {
+      swSrc: "./src/service-worker.js",
+      swDest: "service-worker.js"
+    },
     manifestOptions: {
       name: "Xspace",
       start_url: "/index.html",
@@ -9,17 +14,17 @@ module.exports = {
       orientation: "portrait-primary",
       icons: [
         {
-          src: "/assets/icons/icon98.png",
+          src: "./img/icons/icon98.png",
           type: "image/png",
           sizes: "98x98",
         },
         {
-          src: "/assets/icons/icon192.png",
+          src: "./img/icons/icon192.png",
           type: "image/png",
           sizes: "192x192",
         },
         {
-          src: "/assets/icons/icon512.png",
+          src: "./img/icons/icon512.png",
           type: "image/png",
           sizes: "512x512",
         },
